@@ -232,6 +232,20 @@ ul {
   text-transform: uppercase;
 }
 
+.banner__text .btn :hover {
+  background: white;
+}
+
+.banner .bottom-text {
+  position: absolute;
+  bottom: 0;
+  padding: 16px 22px;
+  background: #f3f3f3;
+  font-weight: 900;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
 .test {
   width: 300px;
   height: 200px;
