@@ -232,7 +232,7 @@ ul {
   text-transform: uppercase;
 }
 
-.banner__text .btn :hover {
+.banner__text .btn:hover {
   background: white;
 }
 
@@ -246,22 +246,124 @@ ul {
   text-transform: uppercase;
 }
 
-.test {
-  width: 300px;
-  height: 200px;
-  position: relative;
-  background: black;
+.service {
+  background: #f4f4f4;
 }
 
-.test .inner {
+.service .nav li {
+  position: relative;
+  background: black;
+  padding: 40px 50px;
+}
+
+.service .nav li .inner {
   background: black;
   position: absolute;
-  width: 50px;
-  height: 50px;
+  width: 20px;
+  height: 20px;
   transform: rotate(45deg);
   left: 0;
   right: 0;
-  bottom: -5px;
+  bottom: -2px;
   margin: 0 auto;
+  opacity: 0;
+}
+
+.service .nav li:first-child > .inner {
+  opacity: 1;
+}
+
+.service .nav li :hover + .inner {
+  opacity: 1;
+}
+
+.service .nav li:first-child a {
+  border-left: 2px solid #ffbb02;
+  color: #ffbb02;
+}
+
+.service .nav li a {
+  display: inline-block;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-left: 4px;
+}
+
+.service .nav li a:hover {
+  color: #ffbb02;
+  border-left: 2px solid #ffbb02;
+}
+
+.service__two {
+  padding-top: 85px;
+}
+
+.service__two > div {
+  flex: 1 0 50%;
+}
+
+.service__two .top-img {
+  float: right;
+}
+
+.service__two .bottom-img {
+  transform: translate(50px, -80px);
+}
+
+.service__two .heading-text {
+  padding: 10px;
+  border-left: 10px solid #ffbb02;
+  text-transform: uppercase;
+}
+
+.service__two .heading-text h2 {
+  font-weight: 300;
+}
+
+.service__two .heading-text h1 {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.service__two p {
+  padding-top: 43px;
+  font-weight: 300;
+}
+
+.service__two ul {
+  margin-top: 20px;
+}
+
+.service__two ul li {
+  background: white;
+  padding: 16px 32px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #21282e;
+  text-transform: uppercase;
+}
+
+.service__two ul li i {
+  font-size: 40px;
+  padding-right: 10px;
+}
+
+.service__two ul li:not(:last-child) {
+  margin-right: 4px;
+}
+
+.service__two .btn {
+  display: inline-block;
+  margin-top: 50px;
+  padding: 14px 22px;
+  border-left: 5px solid #ff4229;
+  outline: 2px solid black;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.service__two .btn:hover {
+  background: white;
 }
 /*# sourceMappingURL=style.css.map */

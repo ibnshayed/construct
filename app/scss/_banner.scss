@@ -32,10 +32,11 @@
             font-weight: 700;
             text-transform: uppercase;
 
-            :hover{
+            &:hover{
                 background: $white;
             }
         }
+    
     }
     .bottom-text{
         position: absolute;
@@ -49,22 +50,3 @@
     }
 }
 
-.test{
-
-    width: 300px;
-    height: 200px;
-    position: relative;
-    background: black;
-
-    .inner{
-        background: black;
-        position: absolute;
-        width: 50px;
-        height: 50px;
-        transform: rotate(45deg);
-        left: 0;
-        right: 0;
-        bottom: -5px;
-        margin: 0 auto;
-    }
-}
