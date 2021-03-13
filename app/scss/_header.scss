@@ -1,0 +1,67 @@
+.header{
+    &__one{
+        background: $darkBlue;
+        padding: 10px;
+        font-size: $font-sm;
+
+        &-item{
+            p{
+                color: #5a5f63;
+                font-weight: 300;
+            }
+            a{
+                color: $white;
+                font-weight: 500;
+                padding-right: 20px;
+
+                i{
+                    padding-right: 2px;
+                }
+            }
+        }
+    }
+
+    &__two{
+        box-shadow: 0px 4px 2px 0 #eee;
+
+        .logo{
+            background-color: red;
+            padding: 20px 24px 0;
+        }
+
+        .text{
+            padding: 24px;
+            text-transform: uppercase;
+            font-weight: 900;
+            margin-right: 50px;
+        }
+
+        ul{
+            li{
+                padding: 24px;
+                
+                a{
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    padding-left: 5px;
+                }
+
+                a:hover{
+                    border-left: 2px solid red;
+                }
+            }
+            :first-child a{
+                border-left: 2px solid red;
+                
+            }
+        }
+
+        .btn{
+            background:  #ffbb02;
+            padding: 24px 40px 24px 44px;
+            text-transform: uppercase;
+            color: #fff;
+            font-weight: 700;
+        }
+    }
+}
