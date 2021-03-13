@@ -1,0 +1,26 @@
+.about{
+    background: #e9f1f4;
+    
+
+    &__one{
+        height: 200px;
+        background: url("../img/bgimg1.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        transform: translateY(-126px);
+
+        > div:first-child{
+            flex-basis: 16%;
+        }
+
+        > div:nth-child(2){
+            flex-basis: 40%;
+            padding-top: 60px;
+        }
+        
+        > div:last-child{
+            flex-basis: 30%;
+        }
+    }
+}
