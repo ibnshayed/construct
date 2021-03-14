@@ -369,6 +369,7 @@ ul {
 
 .about {
   background: #e9f1f4;
+  padding-bottom: 180px;
 }
 
 .about__one {
@@ -494,5 +495,122 @@ ul {
 
 .about__two .info .mobile img {
   transform: scale(1.1) translate(20px, -10px);
+}
+
+.subscribe__one {
+  width: 100%;
+  position: relative;
+  transform: translateY(-50%);
+}
+
+.subscribe__one > div:first-child {
+  flex: 1 0 40%;
+  background-color: #ebe1be;
+  position: relative;
+}
+
+.subscribe__one > div:first-child .scrue1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  padding-left: 16px;
+}
+
+.subscribe__one > div:first-child p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+}
+
+.subscribe__one > div:last-child {
+  flex: 1 0 60%;
+  background: #21282e;
+  padding: 52px 96px 52px 62px;
+}
+
+.subscribe__one > div:last-child .scrue2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  padding-right: 16px;
+}
+
+.subscribe__one > div:last-child h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  border-left: 6px solid #ffbb02;
+  padding-left: 20px;
+}
+
+.subscribe__one > div:last-child p {
+  padding-top: 40px;
+  font-weight: 300;
+  color: #5e656a;
+  line-height: 1.5;
+}
+
+.subscribe__one > div:last-child a {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 20px 30px;
+  font-weight: 700;
+  color: white;
+  background: #ff4229;
+  text-transform: uppercase;
+}
+
+.subscribe__two {
+  margin-top: -230px;
+}
+
+.subscribe__two > div {
+  flex: 1 0 50%;
+}
+
+.subscribe__two > div h3 {
+  color: #ff4229;
+  font-weight: 900;
+}
+
+.subscribe__two > div label {
+  font-size: 36px;
+  font-weight: 100;
+}
+
+.subscribe__two > div .email {
+  border: none;
+  border-bottom: 1px solid #c8c8c8;
+  width: 60%;
+  padding: 0 6px;
+  font-size: 30px;
+}
+
+.subscribe__two > div .submit {
+  display: block;
+  margin-top: 50px;
+  padding: 14px 22px;
+  border: none;
+  border-left: 5px solid #ff4229;
+  outline: 2px solid black;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.subscribe__two > div:last-child {
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.subscribe__two > div:last-child img {
+  float: right;
 }
 /*# sourceMappingURL=style.css.map */
