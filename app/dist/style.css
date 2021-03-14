@@ -381,15 +381,118 @@ ul {
 }
 
 .about__one > div:first-child {
-  flex-basis: 16%;
+  flex-basis: 23%;
 }
 
 .about__one > div:nth-child(2) {
-  flex-basis: 40%;
+  flex-basis: 53%;
   padding-top: 60px;
 }
 
 .about__one > div:last-child {
-  flex-basis: 30%;
+  flex-basis: 20%;
+  margin-left: 30px;
+  transform: translate(30px, 10px);
+}
+
+.about__one .btn {
+  display: inline-block;
+  background: white;
+  margin-top: 50px;
+  padding: 14px 22px;
+  border-left: 5px solid #ff4229;
+  outline: 2px solid black;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.about__two {
+  margin-top: calc(-126px + 54px);
+}
+
+.about__two .head_text {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.about__two .head_text p {
+  font-weight: 30px;
+}
+
+.about__two .head_text h2 {
+  font-size: 30px;
+  font-weight: 900;
+  padding-bottom: 22px;
+}
+
+.about__two .head_text::after {
+  content: "";
+  display: block;
+  width: 65px;
+  height: 8px;
+  background: #ffbb02;
+  margin: 0 auto;
+}
+
+.about__two .info {
+  padding: 100px 90px;
+}
+
+.about__two .info > div:first-child {
+  flex: 1 0 33%;
+}
+
+.about__two .info > div:nth-child(2) {
+  flex: 1 0 33%;
+}
+
+.about__two .info > div:last-child {
+  flex: 1 0 33%;
+}
+
+.about__two .info .card1, .about__two .info .card2, .about__two .info .card3, .about__two .info .card4 {
+  background: white;
+  padding: 20px;
+  position: relative;
+}
+
+.about__two .info .card1 img, .about__two .info .card2 img, .about__two .info .card3 img, .about__two .info .card4 img {
+  transform: translateY(-42px);
+}
+
+.about__two .info .card1 p, .about__two .info .card2 p, .about__two .info .card3 p, .about__two .info .card4 p {
+  clear: both;
+}
+
+.about__two .info .card1 img, .about__two .info .card2 img {
+  float: left;
+  margin-right: 16px;
+}
+
+.about__two .info .card3 img, .about__two .info .card4 img {
+  float: right;
+  margin-left: 16px;
+}
+
+.about__two .info .card3 h3, .about__two .info .card4 h3 {
+  float: right;
+}
+
+.about__two .info .card2, .about__two .info .card4 {
+  margin-top: 90px;
+}
+
+.about__two .info .arrow {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 20px;
+  transform: rotate3d(0, 1, -1, 90deg);
+  bottom: -8px;
+  background: #fff;
+}
+
+.about__two .info .mobile img {
+  transform: scale(1.1) translate(20px, -10px);
 }
 /*# sourceMappingURL=style.css.map */
