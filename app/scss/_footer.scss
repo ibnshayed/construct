@@ -3,10 +3,10 @@
     color: #565d62;
 
     &__one{
+        padding-top: 64px;
         > div:first-child{
             flex: 1 0 40%;
-            padding-top: 64px;
-
+            padding: 0 30px;
             img{
                 padding: 20px 20px 10px;;
                 background: tomato;
@@ -14,7 +14,7 @@
                 margin-right: 20px;
             }
 
-            h2{
+            h4{
                 padding: 20px;
                 color: $white;
                 text-transform: uppercase;
@@ -36,10 +36,44 @@
 
         > div:nth-child(2){
             flex: 1 0 30%;
+            padding:0 60px;
+
+            h4{
+                color: $white;
+                padding-left: 10px;
+                border-left: 2px solid $gold;
+                margin: 20px 0;
+            }
+
+            li{
+                padding: 10px 0;
+            }
         }
 
         > div:last-child{
             flex: 1 0 30%;
+            padding-left: 30px;
+
+            h4{
+                color: $white;
+                padding-left: 10px;
+                border-left: 2px solid $gold;
+                margin: 20px 0;
+            }
+
+            li{
+                
+                .fas{
+                    font-size: 24px;
+                    padding: 20px 10px 0 0;
+
+                }
+                p{
+                    padding: 10px;
+                    font-weight: 300;
+                }
+            }
+            
         }
     }
 }
