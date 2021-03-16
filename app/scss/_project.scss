@@ -1,14 +1,23 @@
 .project{
-    padding: 200px 0;
+    padding: 52px 0 250px;
+
+    @include breakpoint-down(medium){
+        width: 94%;
+        margin: 0 auto;
+    }
 
     &__one{
-        border-bottom: 1px solid #dddddd;;
+        border-bottom: 1px solid #dddddd;
 
         > div:first-child{
-            flex: 1 0 10%;
+            flex-basis:  10%;
             border-left: 10px solid $gold;
             padding: 10px 20px;
             text-transform: uppercase;
+            @include breakpoint-down(medium){
+                flex-basis: 50%;
+                order: 1;
+            }
 
             p{
                 font-weight: 300;
@@ -18,21 +27,40 @@
                 font-size: 30px;
                 font-weight: 900;
                 color: #21282e;
+
+                @include breakpoint-down(medium){
+                    font-size: $font-xl;
+                }
             }
+
+            
         }
 
         > div:nth-child(2){
-            flex: 1 0 40%;
+            flex-basis: 40%;
+            @include breakpoint-down(medium){
+                flex-basis: 100%;
+                order: 3;
+                padding-top: 20px;
+            }
             p{
                 line-height: 2;
             }
         }
 
         > div:last-child{
-            flex: 1 0 20%;
+            flex-basis: 20%;
+
+            @include breakpoint-down(medium){
+                flex-basis: 50%;
+                order: 2;
+            }
 
             img{
                 float: right;
+                @include breakpoint-down(medium){
+                    width: 60%;
+                }
             }
         }
     }
@@ -40,7 +68,6 @@
         padding-top: 60px;
 
         .menu{
-            // flex: 1 0 10%;
             position: relative;
         }
 
@@ -88,6 +115,10 @@
         > div:nth-child(2){
 
             flex-basis: 60%;
+
+            @include breakpoint-down(medium){
+                flex-basis: 100%;
+            }
 
             .mySlides {display: none}
             img {vertical-align: middle;}
@@ -200,6 +231,10 @@
 
         > div:last-child{
             flex-basis: 30%;
+
+            @include breakpoint-down(medium){
+                flex-basis: 100%;
+            }
 
             .card1, .card2{
                 position: relative;

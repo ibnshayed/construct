@@ -2,12 +2,15 @@
     background: #e9f1f4;
     padding-bottom: 180px;
 
+    @include breakpoint-down(medium){
+        padding-bottom: 0;
+    }
+
     &__one{
         height: 200px;
         background: url("../img/bgimg1.png");
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: center center;
         transform: translateY(-126px);
 
         > div:first-child{
@@ -64,17 +67,15 @@
 
         .info{
             padding: 100px 90px;
-
-            > div:first-child{
-                flex: 1 0 33%;
+            @include breakpoint-down(medium){
+                padding: 100px 20px;
             }
 
-            > div:nth-child(2){
-                flex: 1 0 33%;
-            }
-
-            > div:last-child{
-                flex: 1 0 33%;
+            > div{
+                flex-basis: 33.33%;
+                @include breakpoint-down(medium){
+                    flex-basis: 100%;
+                }
             }
 
             .card1, .card2, .card3, .card4{
@@ -124,7 +125,15 @@
 
             .mobile{
                 img{
-                    transform: scale(1.1) translate(20px, -10px);
+                    display: block;
+                    margin: 0 auto;
+                    transform: scale(1.1);
+                    
+                    @include breakpoint-down(medium){
+                        padding: 20px 0;
+                        transform: none;
+
+                    }
                 }
             }
         }

@@ -1,70 +1,105 @@
 .service{
     background: #f4f4f4;
-    
-    
 
-    .nav li{
+    .nav {
 
-        position: relative;
-        background: black;
-        padding: 40px 50px;
+        background: $black;
+     
+        li{
 
-        .inner{
-            background: black;
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            transform: rotate(45deg);
-            left: 0;
-            right: 0;
-            bottom: -2px;
-            margin: 0 auto;
-            opacity: 0;
-        }
+            position: relative;
+            background: $black;
+            padding: 40px 50px;
 
-        &:first-child > .inner{
-            opacity: 1;
-        }
-
-        :hover + .inner{
-            opacity: 1;
-        }
-
-        &:first-child a{
-            border-left: 2px solid $gold;
-            color: $gold;
-        }
-
-        a{
-            display: inline-block;
-            color: $white;
-            text-transform: uppercase;
-            font-weight: 700;
-            padding-left: 4px;
-
-            &:hover{
-                color: $gold;
-                border-left: 2px solid $gold;
+            .inner{
+                background: $black;
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                transform: rotate(45deg);
+                left: 0;
+                right: 0;
+                bottom: -2px;
+                margin: 0 auto;
+                opacity: 0;
             }
-        }
 
-        
+            &:first-child > .inner{
+                opacity: 1;
+            }
+
+            :hover + .inner{
+                opacity: 1;
+            }
+
+            &:first-child a{
+                border-left: 2px solid $gold;
+                color: $gold;
+            }
+
+            a{
+                display: inline-block;
+                color: $white;
+                text-transform: uppercase;
+                font-weight: 700;
+                padding-left: 4px;
+
+                &:hover{
+                    color: $gold;
+                    border-left: 2px solid $gold;
+                }
+            }
+
+            
+        }
     }
 
     &__two{
 
         padding-top: 85px;
 
+        @include breakpoint-down(medium){
+            padding-bottom: 85px;
+        }
+
         > div{
-            flex: 1 0 50%;
+            flex-basis: 50%;
+            @include breakpoint-down(medium){
+                flex-basis: 94%;
+                padding-left: 3%;
+                padding-right: 3%;
+                margin: 0 auto;
+
+            }
+        }
+
+        > div:first-child{
+            @include breakpoint-down(medium){
+                order: 2;
+            }
+        }
+
+        > div:last-child{
+            @include breakpoint-down(medium){
+                order: 1;
+            }
         }
 
         .top-img{
             float: right;
+
+            @include breakpoint-down(medium){
+                float: left;
+                width: 100%;
+            }
         }
 
         .bottom-img{
             transform: translate(50px,-80px);
+            @include breakpoint-down(medium){
+                transform: translate(0px,-80px);
+                width: 50%;
+            }
         }
 
         .heading-text{
@@ -101,10 +136,19 @@
                 i{
                     font-size: 40px;
                     padding-right: 10px;
+
+                    @include breakpoint-down(medium){
+                        font-size: 20px;
+                    }
                 }
 
                 &:not(:last-child){
                     margin-right: 4px;
+                }
+
+                @include breakpoint-down(medium){
+                    padding: 16px 10px;
+
                 }
 
             }
@@ -115,7 +159,7 @@
             margin-top: 50px;
             padding: 14px 22px;
             border-left: 5px solid #ff4229;
-            outline: 2px solid black;
+            outline: 2px solid $black;
             font-weight: 700;
             text-transform: uppercase;
 
@@ -123,7 +167,6 @@
                 background: $white;
             }
         }
-
         
     }
 }

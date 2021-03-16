@@ -1,7 +1,7 @@
 .client{
     background: #e9f1f4;
     padding: 80px 0;
-
+    
     &__heading{
         text-transform: uppercase;
         text-align: center;
@@ -28,6 +28,12 @@
 
     .image{
         padding-top: 60px;
+
+        @include breakpoint-down(medium){
+            width: 94%;
+            margin: 0 auto;
+            justify-content: space-between;
+        }
     }
 
     .toggle{
