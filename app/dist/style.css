@@ -170,13 +170,12 @@ ul {
 }
 
 .header__two .logo {
-  display: block;
   background-color: red;
   padding: 20px 24px 0;
 }
 
 .header__two .text {
-  padding: 20px 0;
+  padding: 20px 24px;
   text-transform: uppercase;
   font-weight: 900;
 }
@@ -221,10 +220,10 @@ ul {
 .banner__text {
   width: 30%;
   position: absolute;
-  top: 163px;
+  top: 100px;
 }
 
-@media (max-width: 61.9375rem) {
+@media (max-width: 74.9375rem) {
   .banner__text {
     width: 94%;
     top: 70px;
@@ -294,10 +293,16 @@ ul {
   background: black;
 }
 
+@media (max-width: 61.9375rem) {
+  .service .nav {
+    justify-content: flex-start;
+  }
+}
+
 .service .nav li {
   position: relative;
   background: black;
-  padding: 40px 50px;
+  padding: 40px 20px;
 }
 
 .service .nav li .inner {
@@ -422,7 +427,7 @@ ul {
 
 .service__two ul li {
   background: white;
-  padding: 16px 32px;
+  padding: 16px 20px;
   font-size: 0.875rem;
   font-weight: 700;
   color: #21282e;
@@ -430,13 +435,18 @@ ul {
 }
 
 .service__two ul li i {
-  font-size: 40px;
-  padding-right: 10px;
+  font-size: 30px;
 }
 
 @media (max-width: 61.9375rem) {
   .service__two ul li i {
     font-size: 20px;
+  }
+}
+
+@media (max-width: 47.9375rem) {
+  .service__two ul li i {
+    font-size: 14px;
   }
 }
 

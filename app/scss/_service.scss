@@ -4,12 +4,17 @@
     .nav {
 
         background: $black;
+
+        @include breakpoint-down(medium){
+            justify-content: flex-start;
+        }
+        
      
         li{
 
             position: relative;
             background: $black;
-            padding: 40px 50px;
+            padding: 40px 20px;
 
             .inner{
                 background: $black;
@@ -127,18 +132,20 @@
             margin-top: 20px;
             li{
                 background: $white;
-                padding: 16px 32px;
+                padding: 16px 20px;
                 font-size: $font-sm;
                 font-weight: 700;
                 color: #21282e;
                 text-transform: uppercase;
                 
                 i{
-                    font-size: 40px;
-                    padding-right: 10px;
+                    font-size: 30px;
 
                     @include breakpoint-down(medium){
                         font-size: 20px;
+                    }
+                    @include breakpoint-down(small){
+                        font-size: 14px;
                     }
                 }
 

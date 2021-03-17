@@ -10,9 +10,9 @@
     &__text{
         width: 30%;
         position: absolute;
-        top: 163px;
+        top: 100px;
 
-        @include breakpoint-down(medium){
+        @include breakpoint-down(large){
             width: 94%;
             top: 70px;
             left: 0;
