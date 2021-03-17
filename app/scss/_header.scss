@@ -25,21 +25,32 @@
     &__two{
         box-shadow: 0px 4px 2px 0 #eee;
 
+        .navbar{
+            > div:first-child{
+                flex-basis: 20%;
+                
+            }
+            > div:last-child{
+                flex-basis: 70%;
+                
+            }
+        }
+
         .logo{
+            display: block;
             background-color: red;
             padding: 20px 24px 0;
         }
 
         .text{
-            padding: 20px 24px;
+            padding: 20px 0;
             text-transform: uppercase;
             font-weight: $fw-black;
-            margin-right: 50px;
         }
 
         ul{
             li{
-                padding: 20px 24px;
+                padding: 22px 0;
                 
                 a{
                     font-weight: $fw-bold;
@@ -50,19 +61,22 @@
                 a:hover{
                     border-left: 2px solid red;
                 }
+
+                &:last-child{
+                    background:  #ffbb02;
+                    padding-left: 44px;
+                    padding-right: 40px;
+                    color: #fff;
+                    text-transform: uppercase;
+                    font-weight: $fw-bold;
+                }
             }
             :first-child a{
                 border-left: 2px solid red;
                 
             }
-        }
 
-        .btn{
-            background:  #ffbb02;
-            padding: 20px 40px 20px 44px;
-            text-transform: uppercase;
-            color: #fff;
-            font-weight: $fw-bold;
+            
         }
     }
 }
