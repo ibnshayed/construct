@@ -28,8 +28,11 @@ function showSlides(n) {
 // Mobile menu
 function openNav() {
   document.getElementById("myNav").style.width = "100%";
+  document.getElementById("body").classList.add("open");
+  
 }
 
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
+  document.getElementById("body").classList.remove("open");
 }

@@ -32,6 +32,10 @@ ul{
     list-style-type: none;
 }
 
+.open{
+    overflow: hidden;
+}
+
 .container{
     max-width: 71.25rem; // 11,40px
     margin: 0 auto;
