@@ -43,7 +43,7 @@
             <div class="container">
                 <div class="navbar flex flex-wrap flex-jc-sb">
                     <div class="flex">
-                        <a class="logo" href="#">
+                        <a class="logo" href="/">
                             <img src="./app/img/axe.png" alt="logo">
                         </a>
                         <h3 class="text">construct</h3>
@@ -51,12 +51,12 @@
     
                     <div>
                         <ul class="flex flex-wrap flex-jc-sb hide-for-mobile">
-                            <li><a href="#">home</a></li>
-                            <li><a href="#">project</a></li>
-                            <li><a href="#">service</a></li>
+                            <li><a href="/">home</a></li>
+                            <li><a href="#project">project</a></li>
+                            <li><a href="#service">service</a></li>
                             <li><a href="#">blog</a></li>
                             <li><a href="#">about</a></li>
-                            <li><a href="#">contact</a></li>
+                            <li><a href="#contact">contact</a></li>
                             <li><a href="#">inquiry now</a></li>
                         </ul>
                     </div>
@@ -66,10 +66,13 @@
                     <div id="myNav" class="overlay hide-for-desktop">
                         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                         <div class="overlay-content">
-                          <a href="#">About</a>
-                          <a href="#">Services</a>
-                          <a href="#">Clients</a>
-                          <a href="#">Contact</a>
+                            <a onclick="closeNav()" href="/">home</a>
+                            <a onclick="closeNav()" href="#">project</a>
+                            <a onclick="closeNav()" href="#">service</a>
+                            <a onclick="closeNav()" href="#">blog</a>
+                            <a onclick="closeNav()" href="#">about</a>
+                            <a onclick="closeNav()" href="#">contact</a>
+                            <a onclick="closeNav()" href="#">inquiry now</a>
                         </div>
                     </div>
 
@@ -92,7 +95,7 @@
                 <h2>we</h2>
                 <h1>build</h1>
                 <h2>greate projects</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci non, eum eos ipsam laudantium quae ea deserunt repellendus repudiandae, asperiores dicta consequuntur totam vero ipsum veritatis ut, cumque numquam nam.</p>
+                <p>We aim to eliminate the task of dividing your project between different architecture and construction company. </p>
                 <a class="btn" href="#">contact us</a>
             </div>
             <p class="bottom-text">services we provide</p>
@@ -169,7 +172,7 @@
     <!-- Service End -->
 
     <!-- Project Start -->
-    <section class="project">
+    <section id="project" class="project">
         <div class="container">
             <div class="project__one flex flex-wrap flex-jc-sb flex-ai-c">
                 <div>
@@ -201,7 +204,7 @@
                           </li>
                           <li>
                             <i class="fas fa-hard-hat"></i>
-                            <p>construct</p>
+                            <p>construction</p>
                           </li>
                           <li>
                             <i class="fas fa-faucet"></i>

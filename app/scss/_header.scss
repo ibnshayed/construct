@@ -61,7 +61,7 @@
                     padding-left: 5px;
                 }
 
-                a:hover{
+                a:hover:not(:last-child){
                     border-left: 2px solid red;
                 }
 
@@ -69,9 +69,12 @@
                     background:  #ffbb02;
                     padding-left: 44px;
                     padding-right: 40px;
-                    color: #fff;
                     text-transform: uppercase;
                     font-weight: $fw-bold;
+
+                    a {
+                        color: #fff;
+                    }
                 }
             }
             :first-child a{
@@ -111,10 +114,13 @@
           
           .overlay-content {
             position: relative;
-            top: 25%;
+            top: 15%;
             width: 100%;
             text-align: center;
             margin-top: 30px;
+            a {
+                text-transform: uppercase;
+            }
           }
           
           .overlay a {

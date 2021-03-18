@@ -41,8 +41,12 @@
             .icon{
                 
                 i{
-                    padding: 20px 20px 20px 0;
+                    padding: 20px 30px 20px 0;
                     font-size: 24px;
+                }
+
+                i:hover{
+                    color: $white;
                 }
             }
         }
@@ -60,8 +64,9 @@
             h4{
                 color: $white;
                 padding-left: 10px;
-                border-left: 2px solid $gold;
+                border-left: 4px solid $gold;
                 margin: 20px 0;
+                text-transform: uppercase;
             }
 
             li{
@@ -69,6 +74,10 @@
 
                 @include breakpoint-down(medium){
                     padding: 10px 30px;
+                }
+
+                a:hover{
+                    color: $white;
                 }
 
             }
@@ -87,8 +96,9 @@
             h4{
                 color: $white;
                 padding-left: 10px;
-                border-left: 2px solid $gold;
+                border-left: 4px solid $gold;
                 margin: 20px 0;
+                text-transform: uppercase;
             }
 
             li{

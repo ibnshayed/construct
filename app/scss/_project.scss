@@ -91,14 +91,17 @@
                     top: 0;
                     left: 70px;
                     background: #ff4229;
+                    color: $white;
                     z-index: 100;
-                    padding: 28px 60px;
+                    padding: 28px 20px;
                     text-transform: uppercase;
+                    font-weight: 700;
 
                 }
 
                 &:hover{
                     background: #ff4229;
+                    color: $white;
                 }
 
                 &:hover > p{
@@ -175,6 +178,7 @@
                 h4{
                     border-left: 4px solid $gold;
                     padding-left: 10px;
+                    text-transform: uppercase;
                 }
                 p{
                     font-size: 12px;
@@ -258,6 +262,7 @@
                 h4{
                     border-left: 4px solid $gold;
                     padding-left: 10px;
+                    text-transform: uppercase;
                 }
                 p{
                     font-size: 12px;

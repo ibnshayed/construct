@@ -200,7 +200,7 @@ ul {
   padding-left: 5px;
 }
 
-.header__two ul li a:hover {
+.header__two ul li a:hover:not(:last-child) {
   border-left: 2px solid red;
 }
 
@@ -208,9 +208,12 @@ ul {
   background: #ffbb02;
   padding-left: 44px;
   padding-right: 40px;
-  color: #fff;
   text-transform: uppercase;
   font-weight: 700;
+}
+
+.header__two ul li:last-child a {
+  color: #fff;
 }
 
 .header__two ul :first-child a {
@@ -246,10 +249,14 @@ ul {
 
 .header__two .overlay-content {
   position: relative;
-  top: 25%;
+  top: 15%;
   width: 100%;
   text-align: center;
   margin-top: 30px;
+}
+
+.header__two .overlay-content a {
+  text-transform: uppercase;
 }
 
 .header__two .overlay a {
@@ -335,13 +342,14 @@ ul {
 
 .banner__text p {
   padding-top: 20px;
+  line-height: 1.6;
 }
 
 .banner__text .btn {
   display: inline-block;
   margin-top: 50px;
   padding: 14px 22px;
-  border-left: 5px solid #ffbb02;
+  border-left: 8px solid #ffbb02;
   outline: 2px solid black;
   font-weight: 700;
   text-transform: uppercase;
@@ -366,7 +374,7 @@ ul {
 }
 
 .service .nav {
-  background: black;
+  background: #21282e;
 }
 
 @media (max-width: 61.9375rem) {
@@ -377,12 +385,12 @@ ul {
 
 .service .nav li {
   position: relative;
-  background: black;
+  background: #21282e;
   padding: 40px 20px;
 }
 
 .service .nav li .inner {
-  background: black;
+  background: #21282e;
   position: absolute;
   width: 20px;
   height: 20px;
@@ -539,7 +547,7 @@ ul {
   display: inline-block;
   margin-top: 50px;
   padding: 14px 22px;
-  border-left: 5px solid #ff4229;
+  border-left: 8px solid #ff4229;
   outline: 2px solid black;
   font-weight: 700;
   text-transform: uppercase;
@@ -660,13 +668,16 @@ ul {
   top: 0;
   left: 70px;
   background: #ff4229;
+  color: white;
   z-index: 100;
-  padding: 28px 60px;
+  padding: 28px 20px;
   text-transform: uppercase;
+  font-weight: 700;
 }
 
 .project__two ul li:hover {
   background: #ff4229;
+  color: white;
 }
 
 .project__two ul li:hover > p {
@@ -746,6 +757,7 @@ ul {
 .project__two > div:nth-child(2) .text h4 {
   border-left: 4px solid #ffbb02;
   padding-left: 10px;
+  text-transform: uppercase;
 }
 
 .project__two > div:nth-child(2) .text p {
@@ -829,6 +841,7 @@ ul {
 .project__two > div:last-child .text h4 {
   border-left: 4px solid #ffbb02;
   padding-left: 10px;
+  text-transform: uppercase;
 }
 
 .project__two > div:last-child .text p {
@@ -862,6 +875,11 @@ ul {
 .about__one > div:nth-child(2) {
   flex-basis: 53%;
   padding-top: 60px;
+  color: white;
+}
+
+.about__one > div:nth-child(2) h2 {
+  text-transform: uppercase;
 }
 
 .about__one > div:last-child {
@@ -875,7 +893,7 @@ ul {
   background: white;
   margin-top: 50px;
   padding: 14px 22px;
-  border-left: 5px solid #ff4229;
+  border-left: 8px solid #ff4229;
   outline: 2px solid black;
   font-weight: 700;
   text-transform: uppercase;
@@ -1123,7 +1141,7 @@ ul {
   margin-top: 50px;
   padding: 14px 22px;
   border: none;
-  border-left: 5px solid #ff4229;
+  border-left: 8px solid #ff4229;
   outline: 2px solid black;
   font-size: 1rem;
   font-weight: 700;
@@ -1177,7 +1195,7 @@ ul {
 .client__heading::after {
   content: "";
   display: block;
-  width: 50px;
+  width: 66px;
   height: 10px;
   background: tomato;
   margin: 0 auto;
@@ -1266,8 +1284,12 @@ ul {
 }
 
 .footer__one > div:first-child .icon i {
-  padding: 20px 20px 20px 0;
+  padding: 20px 30px 20px 0;
   font-size: 24px;
+}
+
+.footer__one > div:first-child .icon i:hover {
+  color: white;
 }
 
 .footer__one > div:nth-child(2) {
@@ -1286,8 +1308,9 @@ ul {
 .footer__one > div:nth-child(2) h4 {
   color: white;
   padding-left: 10px;
-  border-left: 2px solid #ffbb02;
+  border-left: 4px solid #ffbb02;
   margin: 20px 0;
+  text-transform: uppercase;
 }
 
 .footer__one > div:nth-child(2) li {
@@ -1298,6 +1321,10 @@ ul {
   .footer__one > div:nth-child(2) li {
     padding: 10px 30px;
   }
+}
+
+.footer__one > div:nth-child(2) li a:hover {
+  color: white;
 }
 
 .footer__one > div:last-child {
@@ -1316,8 +1343,9 @@ ul {
 .footer__one > div:last-child h4 {
   color: white;
   padding-left: 10px;
-  border-left: 2px solid #ffbb02;
+  border-left: 4px solid #ffbb02;
   margin: 20px 0;
+  text-transform: uppercase;
 }
 
 .footer__one > div:last-child li {
