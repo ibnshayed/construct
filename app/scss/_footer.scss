@@ -2,6 +2,10 @@
     background: #21282e;
     color: #565d62;
 
+    a{
+        color: #565d62;
+    }
+
     &__one{
         padding-top: 64px;
         > div:first-child{
@@ -35,6 +39,7 @@
             }
 
             .icon{
+                
                 i{
                     padding: 20px 20px 20px 0;
                     font-size: 24px;
@@ -87,6 +92,7 @@
             }
 
             li{
+                color: #828282;
                 
                 .fas{
                     font-size: 24px;

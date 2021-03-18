@@ -640,13 +640,13 @@ ul {
 }
 
 .project__two ul li {
-  background: #ddd;
+  background: #eeeff0;
   cursor: pointer;
   position: relative;
 }
 
 .project__two ul li:not(:last-child) {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #e7e7e7;
 }
 
 .project__two ul li i {
@@ -659,13 +659,14 @@ ul {
   position: absolute;
   top: 0;
   left: 70px;
-  background: red;
+  background: #ff4229;
   z-index: 100;
   padding: 28px 60px;
+  text-transform: uppercase;
 }
 
 .project__two ul li:hover {
-  background: red;
+  background: #ff4229;
 }
 
 .project__two ul li:hover > p {
@@ -706,15 +707,15 @@ ul {
 }
 
 .project__two > div:nth-child(2) .prev, .project__two > div:nth-child(2) .next {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #f3f3f3;
   cursor: pointer;
   position: absolute;
   top: 50%;
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: white;
-  font-weight: bold;
+  color: black;
+  font-weight: 100;
   font-size: 18px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
@@ -738,7 +739,7 @@ ul {
   position: absolute;
   bottom: 0;
   width: 100%;
-  background: black;
+  background: #21282e;
   font-weight: 300;
 }
 
@@ -749,7 +750,7 @@ ul {
 
 .project__two > div:nth-child(2) .text p {
   font-size: 12px;
-  color: #21282e;
+  color: #656c72;
 }
 
 .project__two > div:nth-child(2) .numbertext {
@@ -821,7 +822,7 @@ ul {
   position: absolute;
   bottom: 0;
   width: 100%;
-  background: black;
+  background: #21282e;
   font-weight: 300;
 }
 
@@ -832,7 +833,7 @@ ul {
 
 .project__two > div:last-child .text p {
   font-size: 12px;
-  color: #21282e;
+  color: #656c72;
 }
 
 .about {
@@ -1224,6 +1225,10 @@ ul {
   color: #565d62;
 }
 
+.footer a {
+  color: #565d62;
+}
+
 .footer__one {
   padding-top: 64px;
 }
@@ -1313,6 +1318,10 @@ ul {
   padding-left: 10px;
   border-left: 2px solid #ffbb02;
   margin: 20px 0;
+}
+
+.footer__one > div:last-child li {
+  color: #828282;
 }
 
 .footer__one > div:last-child li .fas {
