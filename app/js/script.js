@@ -25,6 +25,8 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
+
+
 // Mobile menu
 function openNav() {
   document.getElementById("myNav").style.width = "100%";
@@ -35,4 +37,19 @@ function openNav() {
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
   document.getElementById("body").classList.remove("open");
+}
+
+// Jquery
+//  On Scroll Header fixed
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("topNav");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("fixed");
+  } else {
+    header.classList.remove("fixed");
+  }
 }
